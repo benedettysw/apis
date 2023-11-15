@@ -1,0 +1,24 @@
+axios.get('https://apisimpsons.fly.dev/api/personajes')
+
+.then(response => {
+  const responsedata = response.data;
+
+  const responsestatus = response.status;
+
+
+  const responseheaders = response.headers;
+
+
+  console.log("dato" ,responsedata)
+  console.log("estado" ,responsestatus)
+  console.log("headers" ,responseheaders)
+  
+  
+
+}).catch(error => {
+  console.log("error: ", error)
+})
+
+.finally(() => {
+  console.log("Esta mal y bien")
+})
