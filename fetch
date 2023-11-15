@@ -1,0 +1,10 @@
+fetch ('https://apisimpsons.fly.dev/api/personajes')
+
+.then (respuesta => {
+  return respuesta.json()
+}).then (data => {
+  console.log(data)
+}).catch(error => {
+  console.error(error.message)
+})
+
